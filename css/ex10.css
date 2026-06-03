@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Web Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        h1 {
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: lightblue;
+            padding: 10px;
+        }
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        img {
+            width: 30vw;
+            height: 30vh;
+        }
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+            img {
+                width: 50vw;
+                height: 20vh;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Community Event Portal</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Events</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Upcoming Events</h2>
+        <img src="event.jpg" alt="Event Image">
+        <p>
+            Welcome to the Community Event Portal.
+            Stay updated with all upcoming events and activities.
+        </p>
+    </div>
+</body>
+</html>

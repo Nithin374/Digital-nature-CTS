@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Model and Layout Control</title>
+    <style>
+        .eventCard {
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+            background-color: lightyellow;
+        }
+        input:focus {
+            outline: 3px solid blue;
+        }
+        .hiddenBox {
+            visibility: hidden;
+            border: 1px solid red;
+            padding: 10px;
+        }
+        .noneBox {
+            display: none;
+            border: 1px solid green;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Community Event Portal</h1>
+    <!-- Event Card -->
+    <div class="eventCard">
+        <h2>Sports Day</h2>
+        <p>Date: 10-06-2026</p>
+    </div>
+    <!-- Form Field -->
+    <form>
+        Name:
+        <input type="text" placeholder="Enter your name">
+    </form>
+    <br>
+    <!-- visibility:hidden -->
+    <div class="hiddenBox">
+        This box is hidden using visibility:hidden.
+    </div>
+    <!-- display:none -->
+    <div class="noneBox">
+        This box is hidden using display:none.
+    </div>
+</body>
+</html>

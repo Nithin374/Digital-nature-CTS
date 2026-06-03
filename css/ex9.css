@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiple Columns in Text</title>
+    <style>
+        .newsArticle {
+            column-count: 2;
+            column-gap: 30px;
+            column-rule: 1px solid gray;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Community Bulletin</h1>
+    <div class="newsArticle">
+
+        The Community Event Portal is organizing several activities
+        for local residents. Sports competitions, cultural programs,
+        and awareness campaigns will be conducted throughout the month.
+        Citizens are encouraged to participate and contribute to the
+        success of these events.
+
+        The city council has also announced special workshops for
+        students and professionals. These programs aim to improve
+        community engagement and provide valuable learning opportunities.
+        Residents can register online and receive updates through the
+        portal.
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+/* Body styles */
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+/* Event card styles */
+.event-card {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+}
+
+/* Style for main CTA button */
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    color: gray;
+}

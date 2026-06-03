@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Color and Background Styling</title>
+
+    <style>
+
+        /* Body Styles */
+        body {
+            background-color: #f0f0f0; /* Fallback Color */
+            background-image: url("city.jpg");
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Main Heading */
+        h1 {
+            color: #003366; /* HEX Color */
+            text-align: center;
+        }
+
+        /* Section Header with Gradient */
+        .section-header {
+            background: linear-gradient(to right, blue, lightblue);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Content Section with RGBA */
+        .content {
+            background-color: rgba(0, 128, 255, 0.3);
+            padding: 15px;
+            margin: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Community Event Portal</h1>
+
+    <div class="section-header">
+        <h2>Upcoming Events</h2>
+    </div>
+
+    <div class="content">
+        <p>Welcome to our city council event portal.</p>
+        <p>Stay updated with the latest community programs and activities.</p>
+    </div>
+
+</body>
+
+</html>

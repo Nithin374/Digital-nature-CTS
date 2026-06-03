@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Link and List Styling</title>
+
+    <style>
+
+        /* Link Styles */
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        /* Navigation Menu */
+        ul {
+            list-style-type: none;   /* Remove bullets */
+            list-style-position: inside;
+        }
+
+        /* List Items */
+        li {
+            padding: 10px;
+            margin: 5px;
+            display: inline;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Community Event Portal</h1>
+
+    <!-- Navigation Menu -->
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <hr>
+
+    <!-- Event List -->
+    <h2>Upcoming Events</h2>
+
+    <ul style="list-style-type:square;">
+        <li>Sports Day</li>
+        <li>Cultural Fest</li>
+        <li>Science Exhibition</li>
+    </ul>
+
+</body>
+
+</html>

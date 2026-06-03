@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table Styling Example</title>
+
+    <style>
+
+        /* Table Style */
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        /* Table Header */
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: lightblue;
+        }
+
+        /* Table Data */
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: white;
+        }
+
+        /* Zebra Striping */
+        tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Event Details</h1>
+
+    <table>
+
+        <tr>
+            <th>Event ID</th>
+            <th>Event Name</th>
+            <th>Date</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>Sports Day</td>
+            <td>10-06-2026</td>
+        </tr>
+
+        <tr>
+            <td>102</td>
+            <td>Cultural Fest</td>
+            <td>20-06-2026</td>
+        </tr>
+
+        <tr>
+            <td>103</td>
+            <td>Science Exhibition</td>
+            <td>25-06-2026</td>
+        </tr>
+
+        <tr>
+            <td>104</td>
+            <td>Food Festival</td>
+            <td>30-06-2026</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
