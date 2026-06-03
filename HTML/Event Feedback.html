@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Feedback Form</title>
+    <style>
+        img {
+            width: 150px;
+            height: 100px;
+        }
+        textarea {
+            width: 300px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Event Feedback</h2>
+    Phone Number:<br>
+    <input type="text" id="phone" onblur="checkPhone()">
+    <p id="phoneMsg"></p>
+    <br>
+    Select Event:<br>
+    <select onchange="showFee(this.value)">
+        <option>Select</option>
+        <option value="100">Sports Day</option>
+        <option value="200">Cultural Fest</option>
+        <option value="300">Science Exhibition</option>
+    </select>
+    <p id="fee"></p>
+    <br>
+    <img src="event.jpg" ondblclick="enlargeImage(this)" alt="Event Image">
+    <br><br>
+    Feedback:<br>
+    <textarea onkeyup="countChars()"></textarea>
+    <p>Characters Typed: <span id="count">0</span></p>
+    <br>
+    <button onclick="submitForm()">Submit</button>
+    <script>
+        function checkPhone() {
+            var phone = document.getElementById("phone").value;
+            if (phone.length == 10) {
+                document.getElementById("phoneMsg").innerHTML =
+                    "Valid Phone Number";
+            } else {
+                document.getElementById("phoneMsg").innerHTML =
+                    "Enter 10 digits";
+            }
+        }
+        function showFee(fee) {
+            document.getElementById("fee").innerHTML =
+                "Event Fee: ₹" + fee;
+        }
+        function submitForm() {
+            alert("Feedback Submitted Successfully!");
+        }
+        function enlargeImage(img) {
+            img.style.width = "300px";
+            img.style.height = "200px";
+        }
+        function countChars() {
+            var text =
+                document.querySelector("textarea").value;
+            document.getElementById("count").innerHTML =
+                text.length;
+        }
+    </script>
+</body>
+</html>

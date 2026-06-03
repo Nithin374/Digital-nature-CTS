@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Promo Video</title>
+    <script>
+        function videoReady() {
+            document.getElementById("msg").innerHTML =
+                "Video ready to play!";
+        }
+        window.onbeforeunload = function () {
+            return "Are you sure you want to leave? Your form may be unfinished.";
+        };
+    </script>
+</head>
+<body>
+    <h2>Event Promotion Video</h2>
+    <video width="400" controls oncanplay="videoReady()">
+        <source src="event-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p id="msg"></p>
+    <br><br>
+    <form>
+        Name:
+        <input type="text" placeholder="Enter your name">
+    </form>
+</body>
+</html>
