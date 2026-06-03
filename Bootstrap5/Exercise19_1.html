@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 19.1</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container mt-5 text-center">
+
+    <h2 class="mb-4">
+        Exercise 19.1 - Tooltip and Popover
+    </h2>
+
+    <!-- Tooltip Button -->
+    <button type="button"
+            class="btn btn-primary me-3"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="This is a Tooltip">
+
+        Hover for Tooltip
+
+    </button>
+
+    <!-- Popover Button -->
+    <button type="button"
+            class="btn btn-success"
+            data-bs-toggle="popover"
+            title="Popover Title"
+            data-bs-content="This is a Bootstrap Popover">
+
+        Click for Popover
+
+    </button>
+
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Initialize Tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+    // Initialize Popovers
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+</script>
+
+</body>
+
+</html>

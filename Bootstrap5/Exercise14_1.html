@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 14.1</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+    <h2 class="text-center mb-4">
+        Exercise 14.1 - Display and Visibility
+    </h2>
+
+    <!-- Hidden on all screens -->
+    <div class="d-none bg-danger text-white p-3 mb-3">
+        This section is hidden on all screen sizes.
+    </div>
+
+    <!-- Visible only on Medium screens and above -->
+    <div class="d-none d-md-block bg-success text-white p-3 mb-3">
+        Visible on Medium (md) screens and above.
+    </div>
+
+    <!-- Flex display only on Large screens and above -->
+    <div class="d-none d-lg-flex bg-primary text-white p-3 justify-content-center">
+        Visible as Flex on Large (lg) screens and above.
+    </div>
+
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

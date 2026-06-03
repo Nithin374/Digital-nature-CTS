@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8.1</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+    <h2 class="mb-4 text-center">
+        Registration Form
+    </h2>
+
+    <form>
+
+        <!-- Name -->
+        <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name">
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" placeholder="Enter your email">
+        </div>
+
+        <!-- Username -->
+        <div class="mb-3">
+            <label class="form-label">Username</label>
+
+            <div class="input-group">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" placeholder="Username">
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" placeholder="Enter password">
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="agree">
+            <label class="form-check-label" for="agree">
+                I agree to the Terms and Conditions
+            </label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">
+            Register
+        </button>
+
+    </form>
+
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

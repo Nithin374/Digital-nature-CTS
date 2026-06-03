@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 19.2 - Toast Notification</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container mt-5 text-center">
+
+    <h2 class="mb-4">
+        Exercise 19.2 - Toast Notification
+    </h2>
+
+    <!-- Button -->
+    <button type="button" class="btn btn-primary" id="toastBtn">
+        Show Toast
+    </button>
+
+</div>
+
+<!-- Toast -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+
+    <div id="liveToast" class="toast" role="alert">
+
+        <div class="toast-header">
+
+            <strong class="me-auto">
+                Bootstrap Notification
+            </strong>
+
+            <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast">
+            </button>
+
+        </div>
+
+        <div class="toast-body">
+            Hello! This is a Bootstrap Toast Notification.
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+    const toastTrigger = document.getElementById('toastBtn');
+    const toastLiveExample = document.getElementById('liveToast');
+
+    if (toastTrigger) {
+        const toastBootstrap = new bootstrap.Toast(toastLiveExample);
+
+        toastTrigger.addEventListener('click', () => {
+            toastBootstrap.show();
+        });
+    }
+</script>
+
+</body>
+
+</html>
